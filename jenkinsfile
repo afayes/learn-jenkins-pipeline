@@ -2,7 +2,8 @@ node {
    def mvnHome
    stage('Preparation') { // for display purposes
       // Get some code from a GitHub repository
-      git 'https://github.com/afayes/simple-spring-boot-web-app.git'
+      git scm
+      //git credentialsId: 'ccc266a9-9cea-4ad3-ac41-a30e7f9ee003', url: 'git@github.com:afayes/learn-jenkins-pipeline.git'
       // Get the Maven tool.
       // ** NOTE: This 'M3' Maven tool must be configured
       // **       in the global configuration.
