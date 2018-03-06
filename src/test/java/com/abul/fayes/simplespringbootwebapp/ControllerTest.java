@@ -12,4 +12,9 @@ public class ControllerTest {
     public void testSomething() throws Exception {
         Assert.assertTrue(true);
     }
+
+    @Test
+    public void failingTest() throws Exception {
+        Assert.assertTrue(false);
+    }
 }
